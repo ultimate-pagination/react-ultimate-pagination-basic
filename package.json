@@ -1,6 +1,6 @@
 {
   "name": "react-ultimate-pagination-basic",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "React.js pagination component with basic theme",
   "main": "lib/react-ultimate-pagination-basic.js",
   "keywords": [
@@ -34,7 +34,7 @@
   },
   "homepage": "https://github.com/ultimate-pagination/react-ultimate-pagination-basic#readme",
   "dependencies": {
-    "react-ultimate-pagination": "0.7.2"
+    "react-ultimate-pagination": "0.8.0"
   },
   "devDependencies": {
     "babel-cli": "^6.7.7",
