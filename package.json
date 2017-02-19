@@ -1,6 +1,6 @@
 {
   "name": "react-ultimate-pagination-basic",
-  "version": "0.3.0",
+  "version": "1.0.0",
   "description": "React.js pagination component with basic theme",
   "main": "lib/react-ultimate-pagination-basic.js",
   "keywords": [
