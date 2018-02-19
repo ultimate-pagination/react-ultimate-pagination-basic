@@ -3,28 +3,47 @@ import {createUltimatePagination, ITEM_TYPES} from 'react-ultimate-pagination';
 
 const activePageStyle = {fontWeight: 'bold'};
 
-const Page = ({value, isActive, onClick}) => (
-  <button style={isActive ? activePageStyle : null} onClick={onClick}>{value}</button>
+const Page = ({value, isActive, onClick, isDisabled}) => (
+  <button
+    style={isActive ? activePageStyle : null}
+    onClick={onClick}
+    disabled={isDisabled}
+  >{value}</button>
 );
 
-const Ellipsis = ({onClick}) => (
-  <button onClick={onClick}>...</button>
+const Ellipsis = ({onClick, isDisabled}) => (
+  <button
+    onClick={onClick}
+    disabled={isDisabled}
+  >...</button>
 );
 
-const FirstPageLink = ({isActive, onClick}) => (
-  <button onClick={onClick}>First</button>
+const FirstPageLink = ({isActive, onClick, isDisabled}) => (
+  <button
+    onClick={onClick}
+    disabled={isDisabled}
+  >First</button>
 );
 
-const PreviousPageLink = ({isActive, onClick}) => (
-  <button onClick={onClick}>Prev</button>
+const PreviousPageLink = ({isActive, onClick, isDisabled}) => (
+  <button
+    onClick={onClick}
+    disabled={isDisabled}
+  >Prev</button>
 );
 
-const NextPageLink = ({isActive, onClick}) => (
-  <button onClick={onClick}>Next</button>
+const NextPageLink = ({isActive, onClick, isDisabled}) => (
+  <button
+    onClick={onClick}
+    disabled={isDisabled}
+  >Next</button>
 );
 
-const LastPageLink = ({isActive, onClick}) => (
-  <button onClick={onClick}>Last</button>
+const LastPageLink = ({isActive, onClick, isDisabled}) => (
+  <button
+    onClick={onClick}
+    disabled={isDisabled}
+  >Last</button>
 );
 
 const itemTypeToComponent = {
